@@ -1,0 +1,23 @@
+.section-heading {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: orangered;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+.feature-box {
+  padding: 2.5rem 1.5rem;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}

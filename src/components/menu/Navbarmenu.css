@@ -1,0 +1,44 @@
+:root {
+  --accent-color: orangered;
+}
+
+.custom-nav-link{
+  position: relative;
+  color: black;
+  font-size: 0.8rem;
+  transition:color 0.3s ease;
+}
+
+.nav-link.active {
+  color: orangered !important;
+}
+
+.custom-nav-link::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -1px;
+  background: orangered;
+  transition: width 0.3s ease;
+}
+
+.custom-nav-link:hover,
+.custom-nav-link.active {
+  color: orangered;
+}
+
+.custom-nav-link:hover::after,
+.custom-nav-link.active::after {
+  width: 100%;
+}
+
+.navbar {
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  background-color: white; /* Default background */
+}
+
+.navbar-scrolled {
+  background-color: rgba(204, 199, 199, 0.85); /* Transparent white */
+}

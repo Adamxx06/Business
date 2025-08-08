@@ -1,0 +1,70 @@
+
+.text-orangered{
+    color: orangered;
+}
+
+.hero-tag {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: orangered;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  display: inline-flex;
+}
+
+.bi-check-circle{
+    color: orangered;
+}
+
+.btn-orange{
+    background-color: orangered;
+    color: white;
+}
+
+.floating-box1 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-box2 {
+  position: absolute;
+  bottom: 20px;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-box {
+  margin-left: 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 180px;
+  line-height: 2rem;
+}
+
+.info-box h5 {
+  margin: 0;
+  font-weight: bold;
+  color: orangered;
+}
+.info-box p {
+  font-size: 12px;
+}
+.info-box-sm {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.chart{
+    color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
