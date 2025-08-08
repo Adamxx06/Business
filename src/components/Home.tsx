@@ -39,7 +39,7 @@ const Home: React.FC = () => {
               src="https://bootstrapmade.com/content/demo/Scout/assets/img/about/about-square-13.webp"
               alt="Hero"
               className="img-fluid rounded shadow"
-              width={400}
+              width={400}jjj
             />
 
             {/* Floating on large screens */}
