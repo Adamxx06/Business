@@ -3,7 +3,7 @@ import './Home.css';
 
 const Home: React.FC = () => {
   return (
-    <section id="home" className="hero bg-dark text-white py-5">
+    <section id="home" className="hero bg-dark text-white py-5 mt-5">
       <div className="container">
         <div className="row align-items-center">
           {/* Left column: Text content */}
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
               src="https://bootstrapmade.com/content/demo/Scout/assets/img/about/about-square-13.webp"
               alt="Hero"
               className="img-fluid rounded shadow"
-              width={400}jjj
+              width={400}
             />
 
             {/* Floating on large screens */}

@@ -15,9 +15,164 @@
 }
 
 .feature-box {
+  position: relative;
   padding: 2.5rem 1.5rem;
   height: 100%;
   background-color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+  overflow: hidden; /* Important: keeps the pseudo-element inside the box */
+  z-index: 1;
 }
+
+/* The orange sliding background */
+.feature-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0; /* Start hidden */
+  background-color: rgb(249, 226, 218);
+  z-index: -1; /* Keep behind content */
+  transition: height 0.4s ease; /* Animation speed and smoothness */
+}
+
+.feature-box:hover::before{
+  height: 100%; /* Fill the whole box */
+}
+
+.feature-box:hover{
+  transform: translateY(-15px);
+  transition: transform 0.5s ease;
+}
+
+.feature-box:hover .icon-container{
+  background-color: orangered;
+}
+
+.feature-box:hover .icon-container .bi{
+  color: white;
+}
+
+
+
+.icon-container:hover{
+  background-color: orangered;
+
+}
+
+
+.icon-container{
+  max-width: fit-content;
+  width: 30%;
+  padding: 20px;
+  margin: 4px auto 8px auto;
+  background-color: rgb(250, 229, 225);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.icon-container .bi{
+  color: orangered;
+  font-size: 1rem;
+}
+
+.about-image-grid .grid-main{
+  width: 60%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-image-grid .grid-secondary{
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: -40px;
+}
+
+
+.about-image-grid .grid-tertiary{
+  width: 35%;
+  height: 45%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+  left: -25%;
+  top: 20%;
+} 
+
+.progress-item .progress-info{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.progress-item .progress{
+  height: 8px;
+}
+
+.about-cta.btn-wrap {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: orangered;
+  border-radius: 30px;
+  padding: 8px;
+
+}
+
+.about-cta.btn-wrap input {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.about-cta.btn-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(240, 142, 142);
+  transition: width 0.5s ease;
+  z-index: 0;
+}
+
+.about-cta.btn-wrap:hover::before {
+  width: 100%;
+}
+
+.about-cta.btn-wrap .btn-orang {
+  position: relative;
+  z-index: 1; /* keep button text above overlay */
+}
+
+
+.experience-badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  align-items: center;     /* center horizontally */
+  width: 120px;            /* fixed size, stays a square */
+  height: 120px;
+  color: white;
+  background: red;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 220px;
+  bottom: 170px;
+}
+
+.experience-badge .years {
+  font-size: 2rem;
+  font-weight: bold;
+}
+ 
+

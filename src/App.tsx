@@ -6,6 +6,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Scroll from "./components/Scroll";
 import React, { useEffect } from 'react';
 
 const App: React.FC = () => {
@@ -34,6 +35,8 @@ const App: React.FC = () => {
         <section id="contact">
           <Contact />
         </section>
+
+        <Scroll />
       </main>
     </>
   );
